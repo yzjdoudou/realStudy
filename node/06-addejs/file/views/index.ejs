@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>52豆豆</title>
+    <link rel="stylesheet" type="text/css" href="css/index.css">
+    <style>
+        img{
+            border:0;
+            vertical-align: middle;
+        }
+        ul,ol{
+            list-style:none;
+        }
+        a{
+            color:#ccc;
+            text-decoration:none;
+        }
+        body,ul,ol,dl,dt,dd,p,h1,h2,h3,h4,h5,h6{
+            margin:0;
+            padding:0;
+        }
+        #wrap{
+            margin: 100px auto;
+            width:100px;
+            height:100px;
+        }
+        table{
+            border-collapse: collapse;
+            border:1px solid black;
+        }
+        tr,td{
+            border:1px solid black;
+        }
+    </style>
+</head>
+<body>
+<div id="wrap">
+    <table>
+        <tr>
+            <td>姓名</td>
+            <td>年龄</td>
+        </tr>
+        <%student.forEach(v=>{%>
+        <tr>
+            <td><%=v.name%></td>
+            <td><%=v.age%></td>
+        </tr>
+            <%v.name%>
+        <% })%>
+    </table>
+</div>
+<script>
+
+</script>
+</body>
+</html>

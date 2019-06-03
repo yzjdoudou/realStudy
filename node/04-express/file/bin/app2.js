@@ -14,7 +14,7 @@ app.get("/student",(req,res)=>{
 })
 
 app.get("/",(req,res)=>{
-    res.sendFile(path.join(__dirname,"../view/index.html"))
+    res.sendFile(path.join(__dirname,"../views/index.html"))
 })
 app.get("/main",(req,res)=>{
     res.send ("zhazha")

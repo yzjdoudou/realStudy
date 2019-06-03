@@ -8,7 +8,7 @@ app.get("/favicon.ico",(req,res)=>{
     res.sendFile(path.join(__dirname,"images/02.jpg"))
 })
 app.get("/",(req,res)=>{
-    res.sendFile(path.join(__dirname,"view/index.html"))
+    res.sendFile(path.join(__dirname,"views/index.html"))
 })
 app.use(express.static(path.join(__dirname,"public")))
 /*app.get("/list",(req,res)=>{
